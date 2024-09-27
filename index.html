@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Company Directory Portal</h1>
+            <p>Manage employee information efficiently.</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Employee Registration Form -->
+            <section class="registration-form">
+                <h2>Employee Registration Form</h2>
+                <form id="employeeForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" placeholder="Enter full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <select id="department" required>
+                            <option value="IT">IT</option>
+                            <option value="HR">HR</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Marketing">Marketing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeId">Employee ID:</label>
+                        <input type="text" id="employeeId" placeholder="Enter employee ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profilePicture">Profile Picture URL:</label>
+                        <input type="url" id="profilePicture" placeholder="Enter profile picture URL">
+                    </div>
+                    <button type="submit">Register Employee</button>
+                    
+                </form>
+            </section>
+
+            <!-- Registered Employee Details -->
+            <section class="employee-details">
+                <h2>Registered Employees</h2>
+                <ul>
+                    <li>John Doe - <a href="mailto:john@example.com">john@example.com</a></li>
+                    <li>Jane Smith - <a href="mailto:jane@example.com">jane@example.com</a></li>
+                </ul>
+            </section>
+
+            <!-- Employee List -->
+            <section class="employee-list">
+                <h2>Employee List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Employee ID</th>
+                            <th>Department</th>
+                            <th>Profile Picture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>12345</td>
+                            <td>IT</td>
+                            <td><img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe"></td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>67890</td>
+                            <td>HR</td>
+                            <td><img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Jane Smith"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Company Location -->
+            <section class="company-location">
+                <h2>Company Location</h2>
+                <p>1234 Business Park, City Name, Country</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
